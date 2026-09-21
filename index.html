@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cleano - professional home cleaning services.">
+  <title>Cleano | Professional Home Cleaning</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#home" aria-label="Cleano home">
+        <span class="brand-mark">C</span><span>Cleano</span>
+      </a>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#how">How it works</a>
+        <a href="#about">About</a>
+        <a href="#booking" class="nav-cta">Book a Cleaner</a>
+      </div>
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Professional home cleaning</span>
+          <h1>A cleaner home.<br><span>More time for you.</span></h1>
+          <p>Book reliable cleaning services for your home with a simple, convenient process.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#booking">Book a Cleaner</a>
+            <a class="btn secondary" href="#services">View Services</a>
+          </div>
+          <div class="trust-row">
+            <span>✓ Easy booking</span>
+            <span>✓ Flexible timing</span>
+            <span>✓ Local service</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="cleaning-illustration">
+            <div class="sparkle s1">✦</div><div class="sparkle s2">✦</div>
+            <div class="home-icon">⌂</div>
+            <div class="broom">🧹</div>
+          </div>
+          <div class="hero-card-bottom">
+            <div><strong>Fresh home</strong><small>Simple. Clean. Convenient.</small></div>
+            <span class="status">● Available</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Our services</span>
+          <h2>Cleaning that fits your needs</h2>
+          <p>Choose the service you need and tell us when you want it.</p>
+        </div>
+        <div class="cards">
+          <article class="service-card"><div class="icon">🏠</div><h3>Home Cleaning</h3><p>General cleaning for bedrooms, living areas, kitchens and more.</p><a href="#booking" data-service="Home Cleaning">Book service →</a></article>
+          <article class="service-card"><div class="icon">✨</div><h3>Deep Cleaning</h3><p>A detailed clean for homes that need extra attention.</p><a href="#booking" data-service="Deep Cleaning">Book service →</a></article>
+          <article class="service-card"><div class="icon">🧼</div><h3>Kitchen & Bathroom</h3><p>Focused cleaning for kitchens, bathrooms and high-use areas.</p><a href="#booking" data-service="Kitchen & Bathroom Cleaning">Book service →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section light">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">How it works</span><h2>Book in three simple steps</h2></div>
+        <div class="steps">
+          <div class="step"><span>01</span><h3>Choose a service</h3><p>Select the cleaning service you need.</p></div>
+          <div class="step"><span>02</span><h3>Pick a time</h3><p>Tell us your preferred date and time.</p></div>
+          <div class="step"><span>03</span><h3>Get it cleaned</h3><p>We arrange the service and confirm your booking.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="section booking-section">
+      <div class="container booking-grid">
+        <div>
+          <span class="eyebrow">Book a cleaner</span>
+          <h2>Tell us what you need.</h2>
+          <p>Submit your details and your booking request will be prepared for Cleano.</p>
+          <div class="contact-note">📞 For now, bookings are demo requests. Connect WhatsApp/payment/admin tools when the business is ready.</div>
+        </div>
+        <form id="bookingForm" class="booking-form">
+          <label>Full name<input name="name" required placeholder="Your name"></label>
+          <label>Phone number<input name="phone" required placeholder="03xx-xxxxxxx"></label>
+          <label>Service<select name="service" id="service" required>
+            <option value="">Select service</option>
+            <option>Home Cleaning</option><option>Deep Cleaning</option><option>Kitchen & Bathroom Cleaning</option>
+          </select></label>
+          <div class="form-row">
+            <label>Date<input type="date" name="date" required></label>
+            <label>Preferred time<input type="time" name="time" required></label>
+          </div>
+          <label>Address<textarea name="address" required placeholder="Your service address"></textarea></label>
+          <button class="btn primary full" type="submit">Submit Booking Request</button>
+          <p id="formMessage" class="form-message" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container about-box">
+        <div><span class="eyebrow">About Cleano</span><h2>A simple marketplace for cleaner homes.</h2></div>
+        <p>Cleano is being built to connect customers with cleaning partners through an easy online booking experience. More features can be added as the business grows.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div><strong>Cleano</strong><span>Professional home cleaning</span></div>
+      <span>© <span id="year"></span> Cleano. All rights reserved.</span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
